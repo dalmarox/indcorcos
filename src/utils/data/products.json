@@ -2,14 +2,17 @@
     {
       
         "id": 0,
-        "title": "Crystal chandelier maria theresa for 12 light",
-        "description": "Crystal chandelier maria theresa for 12 light",
+        "title": "TAC 0,5 EM",
+        "description": "Para iluminación ornamental de Parques Jardines y Espejos de agua",
         "price": 47,
         "discountPercentage": 16,
-        "rating": 4.74,
+        "alimentación": "220Vca" ,
+        "Salida": "12.5 Vca",
+        "Dimensiones":" 160 x 170 x 250",
+        "Peso": "15 kg",
         "stock": 133,
-        "brand": "YIOSI",
-        "category": "lighting",
+        "Potencia": "TAC 0,5 EM",
+        "category": "TRANSFORMADORES",
         "thumbnail": "https://i.dummyjson.com/data/products/100/thumbnail.jpg",
         "images": [
           "https://i.dummyjson.com/data/products/100/1.jpg",
