@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image} from 'react-native'
 import colors from'../utils/globals/colors'
 
 
 const Header = ({title="Industrias Corcos"}) => {
   return (
     <View style={styles.container}>
+      
       <Text style={styles.text}>{title}</Text>
     </View>
   )
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
     },
     text:{
         color: "#ffff",
-        fontSize: 25,
+        fontSize: 18,
         fontWeight: "bold",
              },
 })
