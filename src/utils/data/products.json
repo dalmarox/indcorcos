@@ -1,47 +1,46 @@
 [
   {
   "id":0,
-  "title": "Transformador" ,
+  "title": "Transformador0" ,
   "price":  1000,
-  "categoría": "Transformadores",
-  "Descripcion": 
-  "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
+  "category": "Transformadores",
+  "Description": 
+  "Transforador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
   "stock": 10,
-  "images": 
-  ["c:/Users/drcer/OneDrive/Documentos/REACT NATIVE 53280/REACT NATIVE CURSO COMISION 53280/IMGINDCORCOS/trafos01.jpg"]
+  "images":"https://ibb.co/jkpGTvr"
   },
 
   {
     "id": 1,
     "title": "Transformador1" ,
     "price":  2000,
-    "categoría": "Transformadores",
-    "Descripcion": 
+    "category": "Transformadores",
+    "Description": 
     "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
     "stock": 1,
     "images": 
-    ["c:/Users/drcer/OneDrive/Documentos/REACT NATIVE 53280/REACT NATIVE CURSO COMISION 53280/IMGINDCORCOS/trafos01.jpg"]
+    "https://ibb.co/jkpGTvr"
     },
     {
      "id": 2,
     "title": "Transformador2" ,
     "price": 1000,
-    "categoría": "Transformadores",
-    "Descripcion": 
+    "category": "Transformadores",
+    "Description": 
     "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
     "stock": 10,
     "images": 
-    ["cd:/Users/drcer/OneDrive/Documentos/REACT NATIVE 53280/REACT NATIVE CURSO COMISION 53280/IMGINDCORCOS/trafos01.jpg"]
+    "https://ibb.co/TB6T98f"
     },
     {
       "id": 3,
      "title": "MPP 10" ,
      "price": 1000,
-     "categoría": "Soldadoras de punto",
-     "Descripcion":  "Equipo de Soldadura por Puntos: Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
+     "category": "Soldadoras de punto " ,
+     "Description":  "Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
      "stock": 10,
      "images": 
-     ["c:/Users/drcer/OneDrive/Documentos/REACT NATIVE 53280/REACT NATIVE CURSO COMISION 53280/IMGINDCORCOS/SoldadoraPorPuntos.jpg"]
+     "https://ibb.co/SBWxnRd"
      },
      
     
@@ -50,22 +49,65 @@
       "id": 4,
      "title": "MPP 20" ,
      "price": 1000,
-     "categoría": "Soldadoras de punto",
-     "Descricion": "Equipo de Soldadura por Puntos: Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
+     "category":  "Soldadoras de punto ",
+     "Description": "Equipo de Soldadura por Puntos: Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
      "stock": 10,
      "images": 
-     ["c:/Users/drcer/OneDrive/Documentos/REACT NATIVE 53280/REACT NATIVE CURSO COMISION 53280/IMGINDCORCOS/SoldadoraPorPuntos-MPP-20.jpg"]
-     },
+     "https://ibb.co/gZLHMkQ"
+       },
      {
      "id": 5,
      "title": "Serie RD" ,
      "price": 1000,
-     "categoría": "Soldadoras de corriente continua",
-     "Descrición": "A diodos de silicio sobredimensionados, conectados en circuito trifásico, montado sobre disipadores de aluminio fundido, y protegidos contra picos de extra-tensión por intermedio de un circuito de R.C.",
+     "category": "Soldadoras de corriente continua",
+     "Description": "A diodos de silicio sobredimensionados, conectados en circuito trifásico,",
      "stock": 10,
      "images": 
-     ["c:/Users/drcer/OneDrive/Documentos/REACT NATIVE 53280/REACT NATIVE CURSO COMISION 53280/IMGINDCORCOS/Equipo-de-Soldadura-por-Arco-Electrico-de-Corriente-Continua.jpg"]
-     }
+     "https://ibb.co/gVYN4Nm"
+     },
+     {
+      "id": 6,
+      "title": "Modelo C-1. 130 Amp. 220 Vca.:" ,
+      "price": 1000,
+      "category": "Soldadoras de Arco",
+      "Description": "12 Puntos de regulación 40-135 Amp CA.",
+      "stock": 2,
+      "images":  "https://ibb.co/X5hZ6X4"
+      },
+      {
+        "id": 7,
+        "title": "Modelo C-2. 170 Amp. 220 Vca" ,
+        "price": 1000,
+        "category": "Soldadoras de Arco",
+        "Description": "24 Puntos de regulación 40-175 Amp CA.",
+        
+        "stock": 10,
+        "images": 
+        "https://ibb.co/CWDgSR7"
+        },
+        {
+          "id": 9,
+          "title": "Modelo C-5. 260 Amp. 220/380 Vca" ,
+          "price": 1000,
+          "category": "Soldadoras de Arco",
+          "Description": "36 Puntos de regulación 15-265 Amp CA.",
+          
+          "stock": 10,
+          "images": 
+          "https://ibb.co/5WC3FN6"
+          },
+          {
+            "id": 10,
+            "title": "Modelo C-6. 300 Amp. 220/380 Vca" ,
+            "price": 1000,
+            "category": "Soldadoras de Arco",
+            "Description": "36 Puntos de regulación 15-265 Amp CA.",
+           
+            "stock": 10,
+            "images": 
+            "https://ibb.co/Vxbxscq"
+            }
 
-     
+
+
 ]
