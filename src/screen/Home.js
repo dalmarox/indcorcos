@@ -7,7 +7,10 @@ const Home = ({selectedCategoryState}) => {
     <View>
         <Header title = "Industrias Corcos"/>
      
-       <Categories selectedCategoryState={selectedCategoryState}/>    
+       <Categories selectedCategoryState={selectedCategoryState}/>  
+       
+    
+         
     </View>
   )
 }
@@ -15,5 +18,5 @@ const Home = ({selectedCategoryState}) => {
 export default Home
 
 const styles = StyleSheet.create({
-   
+ 
 }) 

@@ -7,7 +7,7 @@
   "Description": 
   "Transforador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
   "stock": 10,
-  "images":"https://ibb.co/jkpGTvr"
+  "images":"https://www.corcos.com.ar/trafos01.jpg"
   },
 
   {
@@ -19,7 +19,7 @@
     "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
     "stock": 1,
     "images": 
-    "https://ibb.co/jkpGTvr"
+    "https://www.corcos.com.ar/trafos01.jpg"
     },
     {
      "id": 2,
@@ -30,7 +30,7 @@
     "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
     "stock": 10,
     "images": 
-    "https://ibb.co/TB6T98f"
+    "https://www.corcos.com.ar/trafos01.jpg"
     },
     {
       "id": 3,
@@ -40,7 +40,8 @@
      "Description":  "Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
      "stock": 10,
      "images": 
-     "https://ibb.co/SBWxnRd"
+     "https://www.corcos.com.ar/SoldadoraPorPuntos-MPP-20.jpg"
+     
      },
      
     
@@ -53,7 +54,7 @@
      "Description": "Equipo de Soldadura por Puntos: Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
      "stock": 10,
      "images": 
-     "https://ibb.co/gZLHMkQ"
+     "https://www.corcos.com.ar/SoldadoraPorPuntos.jpg"
        },
      {
      "id": 5,
@@ -63,7 +64,7 @@
      "Description": "A diodos de silicio sobredimensionados, conectados en circuito trifásico,",
      "stock": 10,
      "images": 
-     "https://ibb.co/gVYN4Nm"
+     "https://www.corcos.com.ar/Equipo-de-Soldadura-por-Arco-Electrico-de-Corriente-Continua.jpg"
      },
      {
       "id": 6,
@@ -72,7 +73,7 @@
       "category": "Soldadoras de Arco",
       "Description": "12 Puntos de regulación 40-135 Amp CA.",
       "stock": 2,
-      "images":  "https://ibb.co/X5hZ6X4"
+      "images":  "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-1.gif"
       },
       {
         "id": 7,
@@ -83,10 +84,10 @@
         
         "stock": 10,
         "images": 
-        "https://ibb.co/CWDgSR7"
+        "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-2.gif"
         },
         {
-          "id": 9,
+          "id": 8,
           "title": "Modelo C-5. 260 Amp. 220/380 Vca" ,
           "price": 1000,
           "category": "Soldadoras de Arco",
@@ -94,10 +95,10 @@
           
           "stock": 10,
           "images": 
-          "https://ibb.co/5WC3FN6"
+          "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-3.gif"
           },
           {
-            "id": 10,
+            "id": 9,
             "title": "Modelo C-6. 300 Amp. 220/380 Vca" ,
             "price": 1000,
             "category": "Soldadoras de Arco",
@@ -105,9 +106,29 @@
            
             "stock": 10,
             "images": 
-            "https://ibb.co/Vxbxscq"
-            }
+            "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-5.gif"
+            },
 
-
-
+            {
+              "id": 10,
+              "title": "Modelo C-6. 300 Amp. 220/380 Vca" ,
+              "price": 1000,
+              "category": "Soldadoras de Arco",
+              "Description": "36 Puntos de regulación 15-265 Amp CA.",
+             
+              "stock": 10,
+              "images": 
+              "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-6.gif"
+              },
+              {
+                "id": 11,
+                "title": "Modelo C-7. 450 Amp. 220/380 Vca" ,
+                "price": 1000,
+                "category": "Soldadoras de Arco",
+                "Description": "36 Puntos de regulación 15-265 Amp CA.",
+               
+                "stock": 10,
+                "images": 
+                "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-7b.jpg"
+                }
 ]

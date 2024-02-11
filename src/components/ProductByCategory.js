@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     marginVertical:10,
     padding:10,
     borderRadius:10,
-    flexDirection:"row",
+    flexDirection:"column",
     alignItems: "center",
     gap:20
     
@@ -33,13 +33,13 @@ const styles = StyleSheet.create({
    },
    text:{
     
-    fontSize: 16,
+    fontSize: 18,
     color: "white",
     
    },
  image:{
-    minWidth: 90,
-    minHeight:90,
+    minWidth: 180,
+    minHeight:180,
     
     borderRadius:5,
 

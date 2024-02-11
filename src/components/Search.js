@@ -52,7 +52,7 @@ export default Search
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor:colors.green1,
+        backgroundColor:colors.primary,
         flexDirection:"row",
         padding:10,
         alignItems:"center"
@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
         borderWidth:2,
         paddingHorizontal:10,
         paddingVertical:5,
-        borderRadius:5
+        borderRadius:5,
+        
     },
     errorText:{
         color:"red",
