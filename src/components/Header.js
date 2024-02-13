@@ -16,6 +16,7 @@ export default Header
 const styles = StyleSheet.create({
     container:{
         backgroundColor:colors.primary,
+        paddingTop: 20,
         height:80,
         width: "100%",
         justifyContent: "center",
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
     },
     text:{
         color: "#ffff",
-        fontSize: 23,
+        fontSize: 18,
         fontWeight: "bold",
         fontFamily:fonts.JosefinSansBold
         

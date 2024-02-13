@@ -1,8 +1,8 @@
-import { StyleSheet, Text, Image, Pressable,ImageBackground } from 'react-native'
+import { StyleSheet, Text, Image, Pressable } from 'react-native'
 
 import colors from '../utils/globals/colors'
+import fonts from '../utils/globals/fonts'
 
-const image = {uri: 'https://legacy.reactjs.org/logo-og.png'};
 
 
 
@@ -32,12 +32,13 @@ const styles = StyleSheet.create({
 
    },
    text:{
-    
+    width:"60%",
     fontSize: 18,
     color: "white",
     
    },
  image:{
+
     minWidth: 180,
     minHeight:180,
     

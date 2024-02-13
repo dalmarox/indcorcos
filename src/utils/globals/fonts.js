@@ -1,12 +1,12 @@
 export const fontCollection = {
     "JosefinSans-Bold":require("../../../assets/fonts/JosefinSans-Bold.ttf"),
-    "Roboto-Italic":require("../../../assets/fonts/Roboto-Italic.ttf"),
+    "JosefinSans-Italic":require("../../../assets/fonts/JosefinSans-Italic.ttf"),
     "Roboto-Regular":require("../../../assets/fonts/Roboto-Regular.ttf")
   }
 
   const fonts = {
     JosefinSansBold :"JosefinSans-Bold",
-    RobotoItalic:"Roboto-Italic",
+    JosefinSansItalic:"JosefinSans-Italic",
     RobotoRegular:"Roboto-Regular"
   }
 
