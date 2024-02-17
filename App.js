@@ -7,14 +7,15 @@ import {useFonts} from "expo-font"
 import { fontCollection } from './src/utils/globals/fonts'
 import ProductDetail from'./src/screens/ProductDetail'
 import colors from './src/utils/globals/colors'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
+const Stack = createNativeStackNavigator();
 
 
 const App = () => {
   const [fontsLoaded] = useFonts(fontCollection)
-  const [categorySelected,setCategorySelected] = useState("")
-  const [productId,setProductId] = useState(0)
   const {width,height} = useWindowDimensions()
   const [portrait,setPortrait] = useState(true)
 
@@ -25,34 +26,23 @@ const App = () => {
 
   if(!fontsLoaded) return null
 
-  const selectedCategoryState = (category) => {
-    setCategorySelected(category)
-
-  }
-  const selectedProductId = (id) => {
-    setProductId(id)
-  }
 
   return (
     <>
           <StatusBar backgroundColor={colors.primary }  />
 
-      <SafeAreaView style={styles.container}>
-        {categorySelected ?
-                  productId ?
-                    <ProductDetail 
-                      productId={productId}
-                      portrait={portrait}
-                       />
-                    : 
-                    <ProductsByCategory 
-                      selectedProductId={selectedProductId} 
-                      categorySelected={categorySelected}/>
-                  :
-                  <Home selectedCategoryState={selectedCategoryState}/>
-                  
-        }
-      </SafeAreaView>
+          <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="ProductsByCategory" component={ProductsByCategory} />
+            <Stack.Screen name="ProductDetail" component={ProductDetail} />
+          </Stack.Navigator>
+          </NavigationContainer>
+
+          
+            
+
+   
     </>
     
   )
