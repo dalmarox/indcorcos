@@ -9,7 +9,7 @@ import ProductDetail from'./src/screens/ProductDetail'
 import colors from './src/utils/globals/colors'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import Header from './src/components/Header'
 
 const Stack = createNativeStackNavigator();
 
@@ -32,7 +32,16 @@ const App = () => {
           <StatusBar backgroundColor={colors.primary }  />
 
           <NavigationContainer>
-          <Stack.Navigator>
+          <Stack.Navigator
+           initialRouteName='Home'
+           screenOptions={({route}) => {
+            return {
+              header: () =>{
+                return <Header/>
+              }
+            }
+           }}
+          >
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="ProductsByCategory" component={ProductsByCategory} />
             <Stack.Screen name="ProductDetail" component={ProductDetail} />

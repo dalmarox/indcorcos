@@ -6,7 +6,7 @@ const Home = ({navigation}) => {
     
   return (
     <>
-        <Header title="Industrias Corcos"/>
+      
         <Categories navigation={navigation}/>
     </>
   )

@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react'
 import colors from '../utils/globals/colors'
 import Header from '../components/Header'
 
-const ProductDetail = ({productId,portrait}) => {
-
+const ProductDetail = ({route,portrait}) => {
+  const {productId} = route.params
   const [product,setProduct] = useState({})
 
   useEffect(()=>{
@@ -15,7 +15,7 @@ const ProductDetail = ({productId,portrait}) => {
 
   return (
     <View style={styles.container}>
-    <Header title="Detalle del producto"/>
+  
     <View style={[styles.content,{flexDirection:"column",gap:10,padding:10}] } >
       <View>
         <Image
