@@ -1,9 +1,9 @@
-import Header from './src/components/Header'
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import ProductDetail from'./src/screens/ProductDetail'
-import ProductsByCategory from './src/screens/ProductsByCategory'
-import Home from './src/screens/Home'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import Header from'../components/Header'
+import Home from '../screens/Home'
+import ProductDetail from '../screens/ProductDetail'
+import ProductsByCategory from '../screens/ProductsByCategory'
 
 const Stack = createNativeStackNavigator();
 const MainNavigator = () => {

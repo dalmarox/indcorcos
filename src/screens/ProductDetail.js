@@ -14,8 +14,9 @@ const ProductDetail = ({route,portrait}) => {
   },[productId])
 
   return (
+    
     <View style={styles.container}>
-  
+    <Header/>
     <View style={[styles.content,{flexDirection:"column",gap:10,padding:10}] } >
       <View>
         <Image

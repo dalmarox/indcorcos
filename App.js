@@ -1,17 +1,16 @@
-import { SafeAreaView, StyleSheet,View,useWindowDimensions} from 'react-native'
+import { StyleSheet,View,useWindowDimensions} from 'react-native'
 import { StatusBar } from 'expo-status-bar'
-
 import { useEffect, useState } from 'react'
 
 import {useFonts} from "expo-font"
 import { fontCollection } from './src/utils/globals/fonts'
 
 import colors from './src/utils/globals/colors'
-import MainNavigator from './src/components/navigation/MainNavigator'
+import MainNavigator from './src/navigation/MainNavigator'
 
 
 
-const Stack = createNativeStackNavigator();
+
 
 
 const App = () => {

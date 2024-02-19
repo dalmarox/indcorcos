@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native'
 import Header from '../components/Header'
+
 import Categories from '../components/Categories'
 
 const Home = ({navigation}) => {
@@ -8,8 +9,9 @@ const Home = ({navigation}) => {
     <>
       
         <Categories navigation={navigation}/>
+        <Header/>
     </>
-  )
+  );
 }
 
 export default Home
