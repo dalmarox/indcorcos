@@ -34,10 +34,15 @@ const App = () => {
           <NavigationContainer>
           <Stack.Navigator
            initialRouteName='Home'
-           screenOptions={({route}) => {
+           screenOptions={({route,navigation}) => {
             return {
               header: () =>{
-                return <Header/>
+                return <Header
+                                  navigation={navigation}
+                                  title={route.name=== "Home" ? "Industrias Corcos":
+                                      route.name=== "ProductsByCategory" ? route.params.categorySelected:
+                                      "Detalle del Producto"}
+                />
               }
             }
            }}
