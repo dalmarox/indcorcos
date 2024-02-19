@@ -5,7 +5,7 @@ import ProductDetail from'./src/screens/ProductDetail'
 import ProductsByCategory from './src/screens/ProductsByCategory'
 import Home from './src/screens/Home'
 
-
+const Stack = createNativeStackNavigator();
 const MainNavigator = () => {
   return (
     <NavigationContainer>
