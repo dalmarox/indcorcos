@@ -1,15 +1,15 @@
 import { SafeAreaView, StyleSheet,View,useWindowDimensions} from 'react-native'
 import { StatusBar } from 'expo-status-bar'
-import Home from './src/screens/Home'
+
 import { useEffect, useState } from 'react'
-import ProductsByCategory from './src/screens/ProductsByCategory'
+
 import {useFonts} from "expo-font"
 import { fontCollection } from './src/utils/globals/fonts'
-import ProductDetail from'./src/screens/ProductDetail'
+
 import colors from './src/utils/globals/colors'
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Header from './src/components/Header'
+import MainNavigator from './src/components/navigation/MainNavigator'
+
+
 
 const Stack = createNativeStackNavigator();
 
@@ -30,33 +30,9 @@ const App = () => {
   return (
     <>
           <StatusBar backgroundColor={colors.primary }  />
+          <MainNavigator/>
+         
 
-          <NavigationContainer>
-          <Stack.Navigator
-           initialRouteName='Home'
-           screenOptions={({route,navigation}) => {
-            return {
-              header: () =>{
-                return <Header
-                                  navigation={navigation}
-                                  title={route.name=== "Home" ? "Industrias Corcos":
-                                      route.name=== "ProductsByCategory" ? route.params.categorySelected:
-                                      "Detalle del Producto"}
-                />
-              }
-            }
-           }}
-          >
-            <Stack.Screen name="Home" component={Home} />
-            <Stack.Screen name="ProductsByCategory" component={ProductsByCategory} />
-            <Stack.Screen name="ProductDetail" component={ProductDetail} />
-          </Stack.Navigator>
-          </NavigationContainer>
-
-          
-            
-
-   
     </>
     
   )
