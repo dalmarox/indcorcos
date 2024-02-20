@@ -44,15 +44,14 @@ export default ProductDetail
 const styles = StyleSheet.create({
   container:{
     width:"100%",
+  
     flex:1,
     justifyContent:"start",
     alignItems:"center"
   },
   content:{
-    minwidth:"80%",
-    minheight: "80%",
-    justifyContent:"center",
-    alignItems:"center"
+    width:"100%",
+   
   },
 
   image:{
@@ -61,15 +60,15 @@ const styles = StyleSheet.create({
     height:300
   },
   containerText:{
-    gap:30,
+    gap:25,
     paddingHorizontal:40,
     paddingVertical:20,
-    gap:10
+    
   },
 
   containerPrice:{
       width:"100%",
-      flexDirection:"column",
+      flexDirection:"row",
       justifyContent:"space-around",
       alignItems:"center",
       marginVertical:10

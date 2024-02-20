@@ -1,6 +1,7 @@
 import { View , Text ,StyleSheet,Platform ,StatusBar, Pressable } from "react-native"
 import colors from "../utils/globals/colors"
 import {AntDesign} from "@expo/vector-icons"
+import fonts from "../utils/globals/fonts"
 
 const Header = ({title="Industrias Corcos",navigation}) => {
 
@@ -26,7 +27,8 @@ const styles = StyleSheet.create({
         position:"relative"
     },
     text:{
-        fontSize:30
+        fontSize:20,
+        fontFamily:fonts.JosefinSansBold
     },
     goBack:{
         position:"absolute",
