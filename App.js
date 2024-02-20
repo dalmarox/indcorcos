@@ -9,10 +9,6 @@ import colors from './src/utils/globals/colors'
 import MainNavigator from './src/navigation/MainNavigator'
 
 
-
-
-
-
 const App = () => {
   const [fontsLoaded] = useFonts(fontCollection)
   const {width,height} = useWindowDimensions()
@@ -30,7 +26,7 @@ const App = () => {
     <>
           <StatusBar backgroundColor={colors.primary }  />
           <MainNavigator/>
-         
+          
 
     </>
     

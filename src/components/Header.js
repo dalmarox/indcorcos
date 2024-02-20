@@ -1,45 +1,37 @@
-import { StyleSheet, Text, View, Image, Pressable,Platform,StatusBar} from 'react-native'
-import colors from'../utils/globals/colors'
-import fonts from '../utils/globals/fonts'
+import { View , Text ,StyleSheet,Platform ,StatusBar, Pressable } from "react-native"
+import colors from "../utils/globals/colors"
 import {AntDesign} from "@expo/vector-icons"
 
+const Header = ({title="Industrias Corcos",navigation}) => {
 
-const Header = ({title="Industrias Corcos", navigation}) => {
-  return (
-    <View style={styles.container}>
-           {navigation.canGoBack() && 
-    <Pressable style={styles.goBack} onPress={()=>navigation.goBack()}>
-        <AntDesign name="arrowleft" size={25} color="black"/>
-    </Pressable>}
-    <Text style={styles.text}>{title}</Text>
-</View>
-
-  )
+    return  <View style={styles.container}>
+                {navigation.canGoBack() && 
+                <Pressable style={styles.goBack} onPress={()=>navigation.goBack()}>
+                    <AntDesign name="arrowleft" size={25} color="black"/>
+                </Pressable>}
+                <Text style={styles.text}>{title}</Text>
+            </View>
 }
 
 export default Header
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor:colors.primary,
-        paddingTop: 20,
+        backgroundColor:colors.green1,
         height:80,
-        width: "100%",
-        justifyContent: "center",
-        alignItems: "center",
+        paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+        width:"100%",
+        justifyContent:"center",
+        alignItems:"center",
         position:"relative"
     },
     text:{
-        color: "#ffff",
-        fontSize: 18,
-        fontWeight: "bold",
-        fontFamily:fonts.JosefinSansBold
-        
-             },
+        fontSize:30
+    },
     goBack:{
-      position: "absolute",
-      left:18,
-      bottom: 15
+        position:"absolute",
+        left:10,
+        bottom:15
 
     }
 })

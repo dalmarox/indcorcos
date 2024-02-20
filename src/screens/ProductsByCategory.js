@@ -26,7 +26,7 @@ const ProductsByCategory = ({navigation,route}) => {
 
   return (
     <>
-       <Header/>
+       
         <Search handlerKeyword={handlerKeyword}/>
         <FlatList
           data={productsFiltered}

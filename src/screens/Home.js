@@ -9,7 +9,7 @@ const Home = ({navigation}) => {
     <>
       
         <Categories navigation={navigation}/>
-        <Header/>
+        
     </>
   );
 }

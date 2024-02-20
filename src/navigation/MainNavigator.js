@@ -11,7 +11,7 @@ const MainNavigator = () => {
     <NavigationContainer>
     <Stack.Navigator
       initialRouteName="Home"
-      screenOptions={({ route, navigation }) => {
+      screenOptions={({route,navigation}) => {
         return {
           header: () => {
             return (
