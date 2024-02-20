@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <>
-          <StatusBar backgroundColor={colors.primary }  />
+          <StatusBar backgroundColor={colors.primary}  />
           <MainNavigator/>
           
 

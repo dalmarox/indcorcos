@@ -17,7 +17,7 @@ export default Header
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor:colors.green1,
+        backgroundColor:colors.primary,
         height:80,
         paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
         width:"100%",
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     goBack:{
         position:"absolute",
         left:10,
-        bottom:15
+        bottom:10
 
     }
 })
