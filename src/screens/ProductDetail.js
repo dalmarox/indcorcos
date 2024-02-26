@@ -16,7 +16,7 @@ const ProductDetail = ({route,portrait}) => {
   return (
     
     <View style={styles.container}>
-    <View style={[styles.content,{flexDirection:"column",gap:10,padding:10}] } >
+    <View style={[styles.content] } >
       <View>
         <Image
           style={styles.image}
@@ -24,14 +24,14 @@ const ProductDetail = ({route,portrait}) => {
           resizeMode='cover'
         />
       </View>
-        <View style={[styles.containerText,!portrait && {width:"10%"}]}>
+        <View style={[styles.containerText]}>
           <Text style={styles.title}>{product.title}</Text>
           <Text>{product.description}</Text>
         </View>
-        <View style={[styles.containerPrice ,!portrait && {width:"20%",flexDirection:"column"}]}>
+        <View style={[styles.containerPrice]}>
           <Text style={styles.price}>$ {product.price}</Text>
           <Pressable style={styles.buyNow}>
-            <Text style={styles.buyNowText}>Buy Now</Text>
+            <Text style={styles.buyNowText}>Comprar</Text>
           </Pressable>
         </View>
       </View>
@@ -44,50 +44,61 @@ export default ProductDetail
 const styles = StyleSheet.create({
   container:{
     width:"100%",
-  
     flex:1,
     justifyContent:"start",
-    alignItems:"center"
+    alignItems:"center",
+    flexDirection: "row"
   },
   content:{
-    width:"100%",
-   
-  },
+    flexDirection:"column",
+    gap:10,
+    padding:10
+ },
 
   image:{
     
-    width:"100%",
-    height:300
+    width:"50%",
+    height:"50%"
   },
   containerText:{
     gap:25,
-    paddingHorizontal:40,
-    paddingVertical:20,
+    justifyContent:"center",
+    alignItems:"center" ,
+    paddingHorizontal: 10,
+    marginVertical:10,  
     
   },
 
   containerPrice:{
       width:"100%",
-      flexDirection:"row",
-      justifyContent:"space-around",
+      flexDirection:"column",
+      justifyContent:"center",
       alignItems:"center",
-      marginVertical:10
+      marginVertical:10,
+      paddingHorizontal: 10,
   },
   title:{
-    fontSize:20,
-    fontWeight:"bold"
+    fontSize:15,
+    fontWeight:"bold",
+    textAlign: "right"
   },
   price:{
-    fontSize:30
+    fontSize:20,
+    paddingVertical:10,
+    bottom:50
+    
   },
   buyNow:{
-    backgroundColor:colors.ligthGray,
-    paddingVertical:5,
-    paddingHorizontal:10,
-    borderRadius:5
+    
+    paddingVertical:10,
+    paddingHorizontal:5,
+    borderRadius:5,
+    borderColor:"black",
+    backgroundColor:colors.yellow
   },
   buyNowText:{
     color:"black",
-    fontSize: 20
+    fontSize: 20,
+    bottom:60
   }
 })
