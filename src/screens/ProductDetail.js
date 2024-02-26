@@ -18,9 +18,8 @@ const ProductDetail = ({route,portrait}) => {
     <View style={styles.container}>
     <View style={[styles.content] } >
       <View>
-        <Image
-          style={styles.image}
-          source={{uri :product?.images? product.images[0] :null}}
+      <Image style={styles.image}
+          source={{uri: product.images}} 
           resizeMode='cover'
         />
       </View>
@@ -47,18 +46,16 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent:"start",
     alignItems:"center",
-    flexDirection: "row"
+    flexDirection: "column"
   },
   content:{
-    flexDirection:"column",
-    gap:10,
-    padding:10
+    width: "100%"
  },
 
   image:{
     
-    width:"50%",
-    height:"50%"
+    
+    height:300,
   },
   containerText:{
     gap:25,
@@ -80,12 +77,13 @@ const styles = StyleSheet.create({
   title:{
     fontSize:15,
     fontWeight:"bold",
-    textAlign: "right"
+    textAlign: "right",
+    
   },
   price:{
     fontSize:20,
     paddingVertical:10,
-    bottom:50
+    bottom:30
     
   },
   buyNow:{
@@ -94,11 +92,13 @@ const styles = StyleSheet.create({
     paddingHorizontal:5,
     borderRadius:5,
     borderColor:"black",
-    backgroundColor:colors.yellow
-  },
+    backgroundColor:colors.yellow,
+
   buyNowText:{
     color:"black",
-    fontSize: 20,
-    bottom:60
+    fontSize: 25,
+    bottom:60,
+   
+  },
   }
 })

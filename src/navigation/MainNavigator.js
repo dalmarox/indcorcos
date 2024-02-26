@@ -58,12 +58,12 @@ export default MainNavigator;
 
 const styles = StyleSheet.create({
   tabBar:{
-      backgroundColor:"#FFB5A7",
+      backgroundColor:colors.pink,
       height:90,
       position:"absolute",
       left:20,
       right:20,
-      bottom:50,
+      bottom:40,
       borderRadius:10,
       elevation:6,
       /*Shadow IOS*/
