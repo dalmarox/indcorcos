@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,FlatList} from 'react-native'
+import { StyleSheet, Text, View,FlatList,Image} from 'react-native'
 import categories from '../utils/data/categories.json'
 import CardCategory from './CardCategory'
 
@@ -10,7 +10,7 @@ const Categories = ({navigation}) => {
            data={categories} 
            keyExtractor={item => item}
            renderItem= {({item}) => <CardCategory item= {item} navigation={navigation}/>}
-           
+      
            />
     </View>
   )

@@ -1,0 +1,41 @@
+[
+    {
+        "total": 2000,
+         "id":1,
+         "userId": 2,
+         "createdAt":12395466,
+         "items":[
+            {
+                "title": "Transformador0" ,
+                "quantity":2,
+                "price":  1000,
+               "category": "Transformadores",
+               "Description": 
+                "Transforador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
+                "stock": 10,
+                 "images":["https://www.corcos.com.ar/trafos01.jpg"]
+            }
+        ]
+    },
+            {
+                "total": 2000,
+                   "id":6,
+                     "userId": 2,
+                    "createdAt":12395466,
+                    "items":[
+                        {
+                            "id": 4,
+                            "title": "MPP 20" ,
+                            "quantity":2,
+                            "price": 1000,
+                            "category":  "Soldadoras de punto ",
+                            "Description": "Equipo de Soldadura por Puntos: Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
+                            "stock": 10,
+                            "images": 
+                            ["https://www.corcos.com.ar/SoldadoraPorPuntos.jpg"]
+                        }
+                    ]
+            }
+
+         ]
+    

@@ -1,39 +1,48 @@
-import { View , Text ,StyleSheet,Platform ,StatusBar, Pressable } from "react-native"
-import colors from "../utils/globals/colors"
-import {AntDesign} from "@expo/vector-icons"
-import fonts from "../utils/globals/fonts"
+import {
+  View,
+  Text,
+  StyleSheet,
+  Platform,
+  StatusBar,
+  Pressable,
+} from "react-native";
+import colors from "../utils/globals/colors";
+import { AntDesign } from "@expo/vector-icons";
+import fonts from "../utils/globals/fonts";
 
-const Header = ({title="Industrias Corcos",navigation}) => {
+const Header = ({ title = "Industrias Corcos", navigation }) => {
+  return (
+    <View style={styles.container}>
+      {navigation.canGoBack() && (
+        <Pressable style={styles.goBack} onPress={() => navigation.goBack()}>
+          <AntDesign name="arrowleft" size={25} color="black" />
+        </Pressable>
+      )}
 
-    return  <View style={styles.container}>
-                {navigation.canGoBack() && 
-                <Pressable style={styles.goBack} onPress={()=>navigation.goBack()}>
-                    <AntDesign name="arrowleft" size={25} color="black"/>
-                </Pressable>}
-                <Text style={styles.text}>{title}</Text>
-            </View>
-}
+      <Text style={styles.text}>{title}</Text>
+    </View>
+  );
+};
 
-export default Header
+export default Header;
 
 const styles = StyleSheet.create({
-    container:{
-        backgroundColor:colors.primary,
-        height:80,
-        paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-        width:"100%",
-        justifyContent:"center",
-        alignItems:"center",
-        position:"relative"
-    },
-    text:{
-        fontSize:20,
-        fontFamily:fonts.JosefinSansBold
-    },
-    goBack:{
-        position:"absolute",
-        left:10,
-        bottom:10
-
-    }
-})
+  container: {
+    backgroundColor: colors.primary,
+    height: 80,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "relative",
+  },
+  text: {
+    fontSize: 20,
+    fontFamily: fonts.JosefinSansBold,
+  },
+  goBack: {
+    position: "absolute",
+    left: 10,
+    bottom: 10,
+  },
+});

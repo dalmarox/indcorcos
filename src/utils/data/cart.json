@@ -1,0 +1,28 @@
+{
+   "total": 2000,
+    "items":[
+    {
+          "id": 6,
+            "title": "Modelo C-1. 130 Amp. 220 Vca.:" ,
+            "quantity":1,
+            "price": 1000,
+            "category": "Soldadoras de Arco",
+            "Description": "12 Puntos de regulación 40-135 Amp CA.",
+            "stock": 2,
+            "images": [ "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-1.gif"]
+            
+    },
+    {
+        "id": 5,
+        "title": "Serie RD" ,
+        "quantity":1,
+        "price": 1000,
+        "category": "Soldadoras de corriente continua",
+        "Description": "A diodos de silicio sobredimensionados, conectados en circuito trifásico,",
+        "stock": 10,
+        "images": 
+        ["https://www.corcos.com.ar/Equipo-de-Soldadura-por-Arco-Electrico-de-Corriente-Continua.jpg"]
+        
+    }
+    ]
+}
