@@ -13,6 +13,6 @@ export default ShadowPrimary
 
 const styles = StyleSheet.create({
     container:{
-        elevation: 10
+        elevation: 20,
     }
 })
