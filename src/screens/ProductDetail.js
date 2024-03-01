@@ -15,7 +15,10 @@ const ProductDetail = ({route}) => {
     const productFinded = products.find(product => product.id === productId)
     setProduct(productFinded)
   },[productId])
-
+   
+  const handlerAddCartItem = (quantity) => {
+    dispatch(addCartItem(...product,quantity))
+  }
   return (
     
     <View style={styles.container}>
@@ -32,9 +35,13 @@ const ProductDetail = ({route}) => {
         </View>
         <View style={[styles.containerPrice]}>
           <Text style={styles.price}>$ {product.price}</Text>
-          <Pressable style={styles.buyNow} onPress={()=>dispatch(addCartItem(product))}>
+          <Counter initialValue={1} handlerAddCartItem={handlerAddCartItem} textButton="Carrito"/>
+          {
+             /*<Pressable style={styles.buyNow} onPress={()=>dispatch(addCartItem(product))}>
             <Text style={styles.buyNowText}>Agregar al carrito</Text>
           </Pressable>
+           */
+          }
         </View>
       </View>
     </View>
