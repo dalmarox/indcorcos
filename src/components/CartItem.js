@@ -5,6 +5,7 @@ import fonts from "../utils/globals/fonts";
 import { useDispatch } from "react-redux";
 import { deleteCartItem, addCartItem } from "../features/cart/cartSlice";
 import Counter from "./Counter";
+import CounterCart from "./CounterCart";
 
 const CartItem = ({ item }) => {
   const dispatch = useDispatch();
@@ -17,11 +18,8 @@ const CartItem = ({ item }) => {
       <View style={styles.textContainer}>
         <Text style={styles.text}>{item.title}</Text>
         <Text style={styles.text2}>{item.brand}</Text>
-        <Counter
-          initialValue={item.quantity}
-          handlerAddCartItem={handlerAddCartItem}
-          textButton="Enviar"
-        />
+        <CounterCart value={item.quantity}/>
+       
         <Text style={styles.text2}>Cantidad: {item.quantity}</Text>
         <Text style={styles.text2}>Precio: ${item.price} </Text>
       </View>

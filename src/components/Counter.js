@@ -1,13 +1,18 @@
 import { StyleSheet, Text, View, Button } from "react-native";
 import { useState } from "react";
 import colors from "../utils/globals/colors";
+import { useDispatch } from 'react-redux'
+import { addCartItem } from '../features/cart/cartSlice'
 
 
-
-const Counter = ({initialValue, handlerAddCartItem, textButton}) => {
+const Counter = ({initialValue, textButton,product}) => {
   
   const [count,setCount] = useState(initialValue)
-  
+  const dispatch = useDispatch()
+  const handlerAddCartItem = (quantity) => {
+    dispatch(addCartItem(...product,quantity))
+    setCount(1)
+  }
 
 
   return (
@@ -27,7 +32,7 @@ export default Counter;
 
 const styles = StyleSheet.create({
   counterContainer: {
-    width: 200,
+    width: 100,
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
