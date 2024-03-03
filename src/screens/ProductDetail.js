@@ -1,41 +1,34 @@
 import { StyleSheet, Text, View,Image,Pressable } from 'react-native'
-import products from '../utils/data/products.json'
 import { useEffect, useState } from 'react'
 import colors from '../utils/globals/colors'
-
-import Counter from '../components/Counter'
+import { useDispatch } from 'react-redux'
+import { addCartItem } from '../features/cart/cartSlice'
+import { useGetProductQuery } from '../app/services/shop'
 
 const ProductDetail = ({route}) => {
-  
+  const dispatch = useDispatch()
   const {productId} = route.params
-  const [product,setProduct] = useState({})
+  const {data:product,isLoading} = useGetProductQuery(productId)
 
-  useEffect(()=>{
-    const productFinded = products.find(product => product.id === productId)
-    setProduct(productFinded)
-  },[productId])
-   
-  
+  if(isLoading) return <View><Text>cargando...</Text></View>
+
   return (
-    
     <View style={styles.container}>
-    <View style={[styles.content] } >
-      <View>
-      <Image style={styles.image}
-          source={{uri: product.images}} 
+    <View style={styles.content} >
+        <Image
+          style={styles.image}
+          source={{uri:product?.images ? product.images[0] : null}}
           resizeMode='cover'
         />
-      </View>
-        <View style={[styles.containerText]}>
+        <View style={styles.containerText}>
           <Text style={styles.title}>{product.title}</Text>
           <Text>{product.description}</Text>
         </View>
-        <View style={[styles.containerPrice]}>
+        <View style={styles.containerPrice }>
           <Text style={styles.price}>$ {product.price}</Text>
-          <Counter initialValue={1}
-                  product={product}
-                   textButton="Carrito"/>
-        
+          <Pressable style={styles.buyNow} onPress={()=>dispatch(addCartItem(product))}>
+            <Text style={styles.buyNowText}>Carrito</Text>
+          </Pressable>
         </View>
       </View>
     </View>
@@ -43,6 +36,8 @@ const ProductDetail = ({route}) => {
 }
 
 export default ProductDetail
+
+
 
 const styles = StyleSheet.create({
   container:{

@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View,FlatList,Image} from 'react-native'
-import categories from '../utils/data/categories.json'
+import { StyleSheet, View,FlatList} from 'react-native'
+import { useGetCategoriesQuery } from '../app/services/shop'
 import CardCategory from './CardCategory'
 
 
 const Categories = ({navigation}) => {
+  const {data:categories} = useGetCategoriesQuery()
   return (
     <View>
     <FlatList

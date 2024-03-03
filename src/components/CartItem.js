@@ -1,36 +1,29 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import colors from "../utils/globals/colors";
-import fonts from "../utils/globals/fonts";
-import { useDispatch } from "react-redux";
-import { deleteCartItem, addCartItem } from "../features/cart/cartSlice";
-import Counter from "./Counter";
-import CounterCart from "./CounterCart";
+import { Pressable, StyleSheet, Text, View } from 'react-native'
+import {Ionicons} from '@expo/vector-icons'
+import colors from '../utils/globals/colors'
+import fonts from '../utils/globals/fonts'
+import { useDispatch } from 'react-redux'
+import { deleteCartItem } from '../features/cart/cartSlice'
 
-const CartItem = ({ item }) => {
-  const dispatch = useDispatch();
-  const handlerAddCartItem = (quantity) => {
-    dispatch(addCartItem(...item, quantity));
-  };
-
+const CartItem = ({item}) => {
+    const dispatch = useDispatch()
   return (
-    <View style={styles.card}>
-      <View style={styles.textContainer}>
-        <Text style={styles.text}>{item.title}</Text>
-        <Text style={styles.text2}>{item.brand}</Text>
-        <CounterCart value={item.quantity}/>
-       
-        <Text style={styles.text2}>Cantidad: {item.quantity}</Text>
-        <Text style={styles.text2}>Precio: ${item.price} </Text>
-      </View>
-      <Pressable onPress={() => dispatch(deleteCartItem(item.id))}>
-        <Ionicons name="trash" size={30} color="black" />
-      </Pressable>
-    </View>
-  );
-};
+        <View style={styles.card}>
+            <View style={styles.textContainer}>
+                <Text style={styles.text}>{item.title}</Text>
+                <Text style={styles.text2}>{item.brand}</Text>
+                <Text style={styles.text2}>Cantidad: {item.quantity}</Text>
+                <Text style={styles.text2}>Precio: ${item.price} </Text>
+            </View>
+            <Pressable onPress={()=> dispatch(deleteCartItem(item.id))}>
+                <Ionicons name="trash" size={30} color="black"/>
+            </Pressable>
+            
+        </View>
+  )
+}
 
-export default CartItem;
+export default CartItem
 
 const styles = StyleSheet.create({
   card: {
