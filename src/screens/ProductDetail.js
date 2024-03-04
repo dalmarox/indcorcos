@@ -17,7 +17,7 @@ const ProductDetail = ({route}) => {
     <View style={styles.content} >
         <Image
           style={styles.image}
-          source={{uri:product?.images ? product.images[0] : null}}
+          source={{uri:product.images}}
           resizeMode='cover'
         />
         <View style={styles.containerText}>

@@ -1,5 +1,5 @@
 import { StyleSheet, View,FlatList} from 'react-native'
-import { useGetCategoriesQuery } from '../app/services/shop'
+import { useGetCategoriesQuery} from '../app/services/shop'
 import CardCategory from './CardCategory'
 
 

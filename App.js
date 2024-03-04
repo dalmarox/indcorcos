@@ -1,4 +1,5 @@
-import { StatusBar,StyleSheet,useWindowDimensions } from 'expo-status-bar'
+import { StatusBar} from 'expo-status-bar'
+import { useWindowDimensions,StyleSheet } from 'react-native'
 import {useFonts} from "expo-font"
 import { fontCollection } from './src/utils/globals/fonts'
 import MainNavigator from './src/navigation/MainNavigator'
@@ -24,7 +25,7 @@ const App = () => {
     <>
       <StatusBar backgroundColor={colors.primary} />
       <Provider store={store}>
-        <MainNavigator/>
+        <MainNavigator />
       </Provider>
     </>
     
@@ -32,9 +33,9 @@ const App = () => {
 }
 
 export default App
-
 const styles = StyleSheet.create({
   container:{
     flex:1
   }
 })
+
