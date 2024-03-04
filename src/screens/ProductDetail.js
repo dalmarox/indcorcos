@@ -10,14 +10,14 @@ const ProductDetail = ({route}) => {
   const {productId} = route.params
   const {data:product,isLoading} = useGetProductQuery(productId)
 
-  if(isLoading) return <View><Text>cargando...</Text></View>
+ if(isLoading) return  <View><Text>cargando...</Text></View>
 
   return (
     <View style={styles.container}>
     <View style={styles.content} >
         <Image
           style={styles.image}
-          source={{uri:product.images}}
+          source={{uri:"https://industrias-corcos-default-rtdb.firebaseio.com/"}}
           resizeMode='cover'
         />
         <View style={styles.containerText}>

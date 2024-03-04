@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     width:"60%",
     fontSize: 18,
     color: "white",
+    fontFamily: fonts.JosefinSansBold
     
    },
  image:{
