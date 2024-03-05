@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux'
 import { addCartItem } from '../features/cart/cartSlice'
 import { useGetProductQuery } from '../app/services/shop'
 
+
 const ProductDetail = ({route}) => {
   const dispatch = useDispatch()
   const {productId} = route.params
@@ -13,6 +14,7 @@ const ProductDetail = ({route}) => {
  if(isLoading) return  <View><Text>cargando...</Text></View>
 
   return (
+    
     <View style={styles.container}>
     <View style={styles.content} >
         <Image
@@ -32,6 +34,7 @@ const ProductDetail = ({route}) => {
         </View>
       </View>
     </View>
+    
   )
 }
 
@@ -94,7 +97,7 @@ const styles = StyleSheet.create({
     backgroundColor:colors.yellow,
 
   buyNowText:{
-    color:"black",
+    color:colors.blue,
     fontSize: 25,
     bottom:60,
    

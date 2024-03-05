@@ -2,6 +2,7 @@ import { StyleSheet, Text, View,FlatList,Pressable } from 'react-native'
 import CartItem from '../components/CartItem'
 import fonts from '../utils/globals/fonts'
 import {useSelector}  from 'react-redux'
+import colors from '../utils/globals/colors'
 
 const Cart = () => {
     const cart = useSelector((state)=> state.cart)
@@ -33,12 +34,12 @@ const styles = StyleSheet.create({
     },
     confirmContainer:{
         flexDirection:"row",
-        backgroundColor:"gray",
+        backgroundColor:colors.ligthGray,
         padding:25,
         justifyContent:"space-between",
     },
     confirmText:{
-        fontFamily:fonts.PlayfairDisplaySCRegular,
+        fontFamily:fonts.RobotoRegular,
         fontSize:18,
         color:"white"
     }

@@ -21,12 +21,12 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     text:{
-        color:colors.lightGray,
+        color:colors.pink,
         textAlign:"center",
         fontSize:15
     },
     textFocused:{
-        color: colors.green1
+        color: colors.blue
     }
 
 })

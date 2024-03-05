@@ -41,12 +41,12 @@ const styles = StyleSheet.create({
     width: "70%",
   },
   text: {
-    color: colors.lightGray,
+    color: colors.ligthGray,
     fontSize: 19,
     fontFamily: fonts.JosefinSansBold,
   },
   text2: {
-    color: colors.lightGray,
+    color: colors.ligthGray,
     fontSize: 14,
     fontFamily: fonts.JosefinSansBold,
   },

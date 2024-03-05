@@ -22,7 +22,7 @@ export default OrderItem
 
 const styles = StyleSheet.create({
     card:{
-        backgroundColor:colors.lightGray,
+        backgroundColor:colors.ligthGray,
         borderWidth:2,
         margin:10,
         padding:10,
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     text2:{
         fontSize:19,
         fontFamily:fonts.JosefinSansBold,
-        color:"grey"
+        color:"black"
     }
 
 })
