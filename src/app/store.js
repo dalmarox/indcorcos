@@ -8,7 +8,7 @@ export const store = configureStore({
     reducer: {
           counter:counterReducer,
           cart:cartReducer,
-          [shopApi.reducerPath]: shopApi.reducer,
+          [shopApi.reducerPath]: shopApi.reducer
     },
     middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(shopApi.middleware),

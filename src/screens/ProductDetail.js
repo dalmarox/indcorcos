@@ -1,25 +1,22 @@
 import { StyleSheet, Text, View,Image,Pressable } from 'react-native'
-import { useEffect, useState } from 'react'
 import colors from '../utils/globals/colors'
 import { useDispatch } from 'react-redux'
 import { addCartItem } from '../features/cart/cartSlice'
 import { useGetProductQuery } from '../app/services/shop'
-
 
 const ProductDetail = ({route}) => {
   const dispatch = useDispatch()
   const {productId} = route.params
   const {data:product,isLoading} = useGetProductQuery(productId)
 
- if(isLoading) return  <View><Text>cargando...</Text></View>
+  if(isLoading) return <View><Text>cargando...</Text></View>
 
   return (
-    
     <View style={styles.container}>
     <View style={styles.content} >
         <Image
           style={styles.image}
-          source={{uri:"https://industrias-corcos-default-rtdb.firebaseio.com/"}}
+          source={{uri:product?.images ? product.images[0] : null}}
           resizeMode='cover'
         />
         <View style={styles.containerText}>
@@ -34,7 +31,6 @@ const ProductDetail = ({route}) => {
         </View>
       </View>
     </View>
-    
   )
 }
 

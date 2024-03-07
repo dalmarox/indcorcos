@@ -9,7 +9,7 @@ import fonts from '../utils/globals/fonts'
 const ProductByCategory = ({item,navigation}) => {
   return (
     <Pressable onPress={()=>navigation.navigate ("ProductDetail", {productId:item.id})} style={styles.container}>
-      <Text style={styles.text}>{item.id}{item.title}</Text>
+      <Text style={styles.text}>{item.id} {item.title}</Text>
      <Image style={styles.image} source={{uri: item.images}} resizeMode="cover"/>
     </Pressable>
   )
