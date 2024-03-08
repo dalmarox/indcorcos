@@ -16,16 +16,16 @@ const ProductDetail = ({route}) => {
     <View style={styles.content} >
         <Image
           style={styles.image}
-          source={{uri:product?.images ? product.images[0] : null}}
+          source={{uri:product?.images ? product?.images[0] : null}}
           resizeMode='cover'
         />
         <View style={styles.containerText}>
-          <Text style={styles.title}>{product.title}</Text>
-          <Text>{product.description}</Text>
+          <Text style={styles.title}>{product?.title}</Text>
+          <Text>{product?.description}</Text>
         </View>
         <View style={styles.containerPrice }>
-          <Text style={styles.price}>$ {product.price}</Text>
-          <Pressable style={styles.buyNow} onPress={()=>dispatch(addCartItem(product))}>
+          <Text style={styles.price}>$ {product?.price}</Text>
+          <Pressable style={styles.buyNow} onPress={()=>dispatch(addCartItem(product?))}>
             <Text style={styles.buyNowText}>Carrito</Text>
           </Pressable>
         </View>
