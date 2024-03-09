@@ -34,19 +34,19 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     flexDirection: "row",
     justifyContent: "space-between",
-    height: 100,
+    height: 150,
     alignItems: "center",
   },
   textContainer: {
     width: "70%",
   },
   text: {
-    color: colors.ligthGray,
+    color: "black",
     fontSize: 19,
     fontFamily: fonts.JosefinSansBold,
   },
   text2: {
-    color: colors.ligthGray,
+    color: "black",
     fontSize: 14,
     fontFamily: fonts.JosefinSansBold,
   },

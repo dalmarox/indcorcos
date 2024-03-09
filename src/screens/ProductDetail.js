@@ -16,7 +16,7 @@ const ProductDetail = ({route}) => {
     <View style={styles.content} >
         <Image
           style={styles.image}
-          source={{uri:product?.images ? product?.images[0] : null}}
+          source={{uri:product?.images}}
           resizeMode='cover'
         />
         <View style={styles.containerText}>
@@ -25,7 +25,7 @@ const ProductDetail = ({route}) => {
         </View>
         <View style={styles.containerPrice }>
           <Text style={styles.price}>$ {product?.price}</Text>
-          <Pressable style={styles.buyNow} onPress={()=>dispatch(addCartItem(product?))}>
+          <Pressable style={styles.buyNow} onPress={()=>dispatch(addCartItem(product))}>
             <Text style={styles.buyNowText}>Carrito</Text>
           </Pressable>
         </View>

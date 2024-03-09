@@ -15,7 +15,8 @@ export const shopApi = createApi({
             query: () => "/categories.json"
         }),
         getProduct:builder.query({
-            query:(id) => "/products/${id}.json"
+            query:(id) => `/products/${id}.json`
+        
         })
     })
 })

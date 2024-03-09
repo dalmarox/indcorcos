@@ -37,10 +37,11 @@ const styles = StyleSheet.create({
         backgroundColor:colors.ligthGray,
         padding:25,
         justifyContent:"space-between",
+        
     },
     confirmText:{
         fontFamily:fonts.RobotoRegular,
         fontSize:18,
-        color:"white"
+        color:colors.green3
     }
 })
