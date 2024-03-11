@@ -1,78 +1,20 @@
-import { StyleSheet,View,Text } from 'react-native'
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import colors from '../utils/globals/colors';
-import ShopStack from './ShopStack';
-import CartStack from './CartStack';
-import OrdersStack from './OrdersStack';
-import TabBarIcon from '../components/TabBarIcon';
+import { NavigationContainer } from '@react-navigation/native'
+import TabNavigator from './TabNavigator'
+import AuthStack from './AuthStack'
+import {useSelector } from 'react-redux'
+import { useEffect } from 'react'
 
 
 
-const Tab = createBottomTabNavigator();
 const MainNavigator = () => {
-  return (
-    <NavigationContainer>
-       <Tab.Navigator
-       initialRouteName='ShopStack'
-                screenOptions={{
-                    headerShown:false,
-                    tabBarShowLabel:false,
-                    tabBarStyle: styles.tabBar, 
-                    
-                }}
-                >
+    
+  const user = useSelector((state) => state.auth)
 
-        <Tab.Screen 
-        name='ShopStack' 
-        component={ShopStack}
-        options={{
-          tabBarIcon: ({focused}) => 
-          <TabBarIcon title="Productos" nameIcon="home" focused={focused}/>
-      }}
-      />
-        
-        <Tab.Screen 
-        name ='CartStack'
-        component ={CartStack}
-        options={{
-          tabBarIcon: ({focused}) => 
-          <TabBarIcon title="Carrito" nameIcon="cart-sharp" focused={focused}/>
-      }}
-      
-        />
-        <Tab.Screen 
-        name='OrdersStack' 
-        component={OrdersStack}
-        options={{
-          tabBarIcon: ({focused}) => <TabBarIcon title="Ordenes" nameIcon="list" focused={focused}/>
-      }}
-        />
-       </Tab.Navigator>
-       
-    </NavigationContainer>
+  return (
+        <NavigationContainer>
+            {user.idToken ? <TabNavigator/> : <AuthStack/> }
+        </NavigationContainer>
   )
 }
 
-export default MainNavigator;
-
-const styles = StyleSheet.create({
-  tabBar:{
-      backgroundColor:colors.pink,
-      height:90,
-      position:"absolute",
-      left:20,
-      right:20,
-      bottom:40,
-      borderRadius:10,
-      elevation:6,
-      /*Shadow IOS*/
-      shadowColor: "#000",
-      shadowOffset: {
-          width: 0,
-          height: 2,
-      },
-      shadowOpacity: 0.23,
-      shadowRadius: 2.62, 
-  }
-})
+export default MainNavigator

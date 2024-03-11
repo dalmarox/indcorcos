@@ -3,10 +3,14 @@ import {Ionicons} from '@expo/vector-icons'
 import colors from '../utils/globals/colors'
 import fonts from '../utils/globals/fonts'
 import { useDispatch } from 'react-redux'
-import { deleteCartItem } from '../features/cart/cartSlice'
+import { deleteCartItem} from '../features/cart/cartSlice'
+
+
 
 const CartItem = ({item}) => {
     const dispatch = useDispatch()
+    
+
   return (
         <View style={styles.card}>
             <View style={styles.textContainer}>

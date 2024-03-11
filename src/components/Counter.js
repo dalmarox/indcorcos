@@ -4,11 +4,14 @@ import { useSelector,useDispatch } from 'react-redux'
 import { increment,decrement,incrementByAmount } from '../features/counter/counterSlice'
 import colors from '../utils/globals/colors'
 
+
 const Counter = () => {
 
     const dispatch = useDispatch()
     const count = useSelector((state)=> state.counter.value)
     const [number,setNumber] = useState(0)
+  
+   
 
   return (
     <View style={styles.counterContainer}>
