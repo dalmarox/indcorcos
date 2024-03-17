@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View,Image,Pressable } from 'react-native'
 import colors from '../utils/globals/colors'
+import Counter from '../components/Counter'
+
 import { useDispatch } from 'react-redux'
 import { addCartItem } from '../features/cart/cartSlice'
 import { useGetProductQuery } from '../app/services/shop'
