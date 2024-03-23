@@ -7,7 +7,9 @@ import colors from './src/utils/globals/colors'
 import { store } from './src/app/store'
 import { Provider } from 'react-redux'
 import { useEffect, useState } from 'react'
+import { init } from './src/utils/db'
 
+init()
 const App = () => {
 
   const [fontsLoaded] = useFonts(fontCollection)
