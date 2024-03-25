@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     color: "black",
     fontSize: 19,
     fontFamily: fonts.JosefinSansBold,
-    Bottom:10
+    
   },
   text2: {
     color: "black",

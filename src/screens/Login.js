@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View ,Pressable } from 'react-native'
+import { StyleSheet, Text, View ,Pressable,Image } from 'react-native'
 import InputForm from '../components/InputForm'
 import SubmitButton from '../components/SubmitButton'
 import {useState} from 'react'
@@ -17,6 +17,7 @@ const Login = ({navigation}) => {
     const [errorEmail,setErrorEmail] = useState("")
     const [errorPassword,setErrorPassword] = useState("")
     const [triggerLogin] = useLoginMutation()
+    
 
     const onSubmit = async () => {
       try {
@@ -47,7 +48,12 @@ switch(error.path){
 
   return (
         <View style={styles.main}>
+                <Image
+        style={styles.logo}
+        source={{uri:'https://imgbb.host/images/2Vsvq.th.jpeg'}}
+      />
             <View style={styles.container}>
+      
                 <InputForm
                     label="Email"
                     value={email}
@@ -75,6 +81,7 @@ switch(error.path){
 
 export default Login
 
+
 const styles = StyleSheet.create({
     main:{
       flex:1,
@@ -82,7 +89,7 @@ const styles = StyleSheet.create({
       alignItems:"center"
     },
     container:{
-      width:"90%",
+      width:"80%",
       backgroundColor:colors.pink,
       gap:15,
       borderRadius:10,
@@ -102,5 +109,11 @@ const styles = StyleSheet.create({
       fontSize:14,
       fontFamily:fonts.JosefinSansBold,
       color:"blue"
-    }
+    },
+logo:{
+margin:10,
+padding:10,
+  width:80,
+height:80,
+}
 })

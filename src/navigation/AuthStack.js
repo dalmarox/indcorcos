@@ -12,7 +12,7 @@ const AuthStack = () => {
         screenOptions={({navigation,route})=>{
             return {
                 header: () => <Header       
-                                title= {route.name === "Login" ? "Inicio de sesion" : "Registro"}
+                                title= {route.name === "Login" ? "Bienvenidos" : "Registro"}
                                 navigation={navigation}
                                 />
             }
