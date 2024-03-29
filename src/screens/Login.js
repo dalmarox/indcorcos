@@ -48,10 +48,12 @@ switch(error.path){
 
   return (
         <View style={styles.main}>
-                <Image
+          <Image
         style={styles.logo}
         source={{uri:'https://imgbb.host/images/2Vsvq.th.jpeg'}}
       />
+          <Text style={styles.text}>Industrias Corcos, nuestro ecommerce y centro de consultas</Text>
+      
             <View style={styles.container}>
       
                 <InputForm
@@ -115,5 +117,11 @@ margin:10,
 padding:10,
   width:80,
 height:80,
+},
+text:{
+  fontSize:22,
+  fontFamily:fonts.JosefinSansBold,
+  textAlign:"center",
+  padding:15
 }
 })

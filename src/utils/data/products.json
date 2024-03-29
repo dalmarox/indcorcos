@@ -7,7 +7,8 @@
   "Description": 
   "Transforador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
   "stock": 10,
-  "images":"https://www.corcos.com.ar/trafos01.jpg"
+  "images":[
+  "https://www.corcos.com.ar/trafos01.jpg"]
   },
 
   {
@@ -18,8 +19,8 @@
     "Description": 
     "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
     "stock": 1,
-    "images": 
-    "https://www.corcos.com.ar/trafos01.jpg"
+    "images": [
+    "https://www.corcos.com.ar/trafos01.jpg"]
     },
     {
      "id": 2,
@@ -29,8 +30,8 @@
     "Description": 
     "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
     "stock": 10,
-    "images": 
-    "https://www.corcos.com.ar/trafos01.jpg"
+    "images": [
+    "https://www.corcos.com.ar/trafos01.jpg"]
     },
     {
       "id": 3,
@@ -39,8 +40,8 @@
      "category": "Soldadoras de punto " ,
      "Description":  "Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
      "stock": 10,
-     "images": 
-     "https://www.corcos.com.ar/SoldadoraPorPuntos-MPP-20.jpg"
+     "images": [
+     "https://ibb.co/xgsnF69" ]
      
      },
      
@@ -53,8 +54,8 @@
      "category":  "Soldadoras de punto ",
      "Description": "Equipo de Soldadura por Puntos: Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
      "stock": 10,
-     "images": 
-     "https://www.corcos.com.ar/SoldadoraPorPuntos.jpg"
+     "images": [
+     "https://ibb.co/Jj4ZJqD"]
        },
      {
      "id": 5,
@@ -63,8 +64,8 @@
      "category": "Soldadoras de corriente continua",
      "Description": "A diodos de silicio sobredimensionados, conectados en circuito trifásico,",
      "stock": 10,
-     "images": 
-     "https://www.corcos.com.ar/Equipo-de-Soldadura-por-Arco-Electrico-de-Corriente-Continua.jpg"
+     "images":[
+     "https://www.corcos.com.ar/Equipo-de-Soldadura-por-Arco-Electrico-de-Corriente-Continua.jpg"]
      },
      {
       "id": 6,
@@ -73,7 +74,7 @@
       "category": "Soldadoras de Arco",
       "Description": "12 Puntos de regulación 40-135 Amp CA.",
       "stock": 2,
-      "images":  "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-1.gif"
+      "images":  ["https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-1.gif"]
       },
       {
         "id": 7,
@@ -83,8 +84,8 @@
         "Description": "24 Puntos de regulación 40-175 Amp CA.",
         
         "stock": 10,
-        "images": 
-        "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-2.gif"
+        "images": [
+        "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-2.gif"]
         },
         {
           "id": 8,
@@ -94,8 +95,8 @@
           "Description": "36 Puntos de regulación 15-265 Amp CA.",
           
           "stock": 10,
-          "images": 
-          "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-3.gif"
+          "images": [
+          "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-3.gif"]
           },
           {
             "id": 9,
@@ -105,8 +106,8 @@
             "Description": "36 Puntos de regulación 15-265 Amp CA.",
            
             "stock": 10,
-            "images": 
-            "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-5.gif"
+            "images": [
+            "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-5.gif"]
             },
 
             {
@@ -117,8 +118,8 @@
               "Description": "36 Puntos de regulación 15-265 Amp CA.",
              
               "stock": 10,
-              "images": 
-              "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-6.gif"
+              "images": [
+              "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-6.gif"]
               },
               {
                 "id": 11,
@@ -128,7 +129,7 @@
                 "Description": "36 Puntos de regulación 15-265 Amp CA.",
                
                 "stock": 10,
-                "images": 
-                "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-7b.jpg"
+                "images": [
+                "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-7b.jpg"]
                 }
 ]

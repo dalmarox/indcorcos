@@ -18,7 +18,7 @@ export default ProductByCategory
 
 const styles = StyleSheet.create({
    container:{
-    backgroundColor: colors.green2,
+    
     width:"80%",
     marginHorizontal:"10%",
     marginVertical:10,
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
    text:{
     width:"60%",
     fontSize: 18,
-    color: "white",
+    color: "black",
     fontFamily: fonts.JosefinSansBold
     
    },

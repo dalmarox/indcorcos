@@ -8,7 +8,9 @@ const colors={
     blue:"#235789",
     pink:"#FFB5A7",
     tiza:"#F1FFE7",
-    ghostwhite:"#F8F7FF"
+    ghostwhite:"#F8F7FF",
+    aqua:"#6EF9F5",
+    header:"#5ABCB9",
     
 }
 
