@@ -26,15 +26,15 @@ export default CardCategory;
 
 const styles = StyleSheet.create({
   container: {
+    flex:1,
     width: 350,
-    height:50,
+    height:100,
     
-
-    margin:30,
-    marginVertical: 10,
+    margin:10,
     overflow:"hidden",
     alignItems: "center",
     borderRadius: 30,
+    justifyContent:"center"
   },
   text: {
     fontSize: 18,

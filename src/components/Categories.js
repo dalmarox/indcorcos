@@ -7,6 +7,7 @@ const Categories = ({navigation}) => {
   const {data:categories} = useGetCategoriesQuery()
   return (
     <View>
+
     <FlatList
            data={categories} 
            keyExtractor={item => item.title}

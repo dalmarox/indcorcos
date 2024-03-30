@@ -46,23 +46,27 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent:"start",
     alignItems:"center",
-    flexDirection: "column"
+    
   },
   content:{
-    width: "100%"
+    width: "100%",
+    
  },
 
   image:{
     
-    
-    height:300,
+    width:200,
+    height:200,
+    Top:80,
+    left:80
+
   },
   containerText:{
     gap:25,
     justifyContent:"center",
     alignItems:"center" ,
-    paddingHorizontal: 10,
-    marginVertical:10,  
+    paddingHorizontal:5,
+    marginVertical:25,  
     
   },
 

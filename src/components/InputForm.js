@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,TextInput } from 'react-native'
+import { StyleSheet, Text, View,TextInput, ImageBackground } from 'react-native'
 import fonts from '../utils/globals/fonts'
 
 
@@ -15,9 +15,9 @@ const InputForm = ({label,value, onChangeText, isSecure,error}) => {
             secureTextEntry= {isSecure}
            
         />
+      
          {error ? <View><Text style={styles.error}>{error}</Text></View> : null}
 
-        
     </View>
   )
 }
@@ -28,7 +28,7 @@ export default InputForm
 
 const styles = StyleSheet.create({
     inputContainer:{
-        width:"100%"
+      width: "100%"      
     },
     input:{
         width:"90%",

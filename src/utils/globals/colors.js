@@ -11,6 +11,7 @@ const colors={
     ghostwhite:"#F8F7FF",
     aqua:"#6EF9F5",
     header:"#5ABCB9",
+    input:"#ADB9E3"
     
 }
 

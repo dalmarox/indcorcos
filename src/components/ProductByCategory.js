@@ -19,7 +19,7 @@ export default ProductByCategory
 const styles = StyleSheet.create({
    container:{
     
-    width:"80%",
+    width:"90%",
     marginHorizontal:"10%",
     marginVertical:10,
     padding:10,

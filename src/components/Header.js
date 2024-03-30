@@ -38,7 +38,7 @@ export default Header;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.header,
-    height: 80,
+    height: 150,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     width: "100%",
     justifyContent: "center",
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     fontFamily: fonts.JosefinSansBold,
+    padding:8,
   },
   goBack: {
     position: "absolute",

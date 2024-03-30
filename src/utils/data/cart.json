@@ -21,7 +21,9 @@
         "Description": "A diodos de silicio sobredimensionados, conectados en circuito trifásico,",
         "stock": 10,
         "images": 
-        ["https://www.corcos.com.ar/Equipo-de-Soldadura-por-Arco-Electrico-de-Corriente-Continua.jpg"]
+        ["https://www.corcos.com.ar/Equipo-de-Soldadura-por-Arco-Electrico-de-Corriente-Continua.jpg",
+          "https://ibb.co/album/kHsjpB"
+    ]
         
     }
     ]

@@ -15,6 +15,7 @@ const App = () => {
   const [fontsLoaded] = useFonts(fontCollection)
   const {width,height} = useWindowDimensions()
   const [portrait,setPortrait] = useState(true)
+  
 
   useEffect(()=>{
     if(width > height) setPortrait(false) 
@@ -25,9 +26,12 @@ const App = () => {
 
   return (
     <>
-      <StatusBar backgroundColor={colors.primary} />
+      <StatusBar backgroundColor={colors.header} />
       <Provider store={store}>
-        <MainNavigator />
+      
+
+          <MainNavigator />
+        
       </Provider>
     </>
     
@@ -39,5 +43,6 @@ const styles = StyleSheet.create({
   container:{
     flex:1
   }
+ 
 })
 
