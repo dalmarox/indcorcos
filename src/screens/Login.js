@@ -8,6 +8,9 @@ import { useLoginMutation } from '../app/services/auth'
 import { useDispatch } from 'react-redux'
 import { setUser } from '../features/auth/authSlice'
 import { loginSchema } from '../utils/validations/authSchema'
+import { deleteSession, insertSession } from '../utils/db'
+import ModalMessage from '../components/ModalMessage'
+
 
 const Login = ({navigation}) => {
 
@@ -17,14 +20,24 @@ const Login = ({navigation}) => {
     const [errorEmail,setErrorEmail] = useState("")
     const [errorPassword,setErrorPassword] = useState("")
     const [triggerLogin] = useLoginMutation()
-    
+    const [modalVisible,setModalVisible] = useState(false)
 
+    const handlerCloseModal = () => {
+      setModalVisible(false)
+    }
 
     const onSubmit = async () => {
       try {
 
        loginSchema.validateSync({email,password})
-        const {data} = await  triggerLogin({email,password})
+        const {data,error} = await  triggerLogin({email,password})
+        if(error){
+          console.log(error.data.error.message)
+          setModalVisible(true)
+        }
+
+        deleteSession()
+        insertSession(data)
         dispatch(setUser({email:data.email,idToken:data.idToken,localId:data.localId}))
 
       } catch (error) {
@@ -48,6 +61,7 @@ switch(error.path){
     }
 
   return (
+    <>
 <View style={styles.main}>
       
           <Image
@@ -80,7 +94,12 @@ switch(error.path){
                 </Pressable>
             </View>
     </View>
-  
+      <ModalMessage textButton='Volver a intentar' 
+      text="Email o Contraseña invalido" 
+      modalVisible={modalVisible} 
+      onclose={handlerCloseModal}/>
+
+</>
   )
   
 }

@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react'
 import ProductByCategory from '../components/ProductByCategory'
 import Search from '../components/Search'
 import { useGetProductsByCategoryQuery } from '../app/services/shop'
+import LoadingSpinner from '../components/LoadingSpinner'
+import Error from '../components/Error'
+import EmptyListComponent from '../components/EmptyListComponent'
 
 const ProductsByCategory = ({navigation,route}) => {
 
@@ -24,8 +27,11 @@ const ProductsByCategory = ({navigation,route}) => {
   }))
   },[categorySelected,keyword,products])
 
-  if(isLoading) return <View><Text>cargando...</Text></View>
-
+  if(isLoading) return <LoadingSpinner/>
+  if(isError) return <Error message="¡Ups! Algo salió mal." textButton="Volver" onRetry={()=>navigation.goBack()}/>
+  if(isSuccess && products.length === 0) return <EmptyListComponent message="No hay productos de esta categoria"/>
+  
+  
 
   return (
     <>

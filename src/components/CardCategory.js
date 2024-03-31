@@ -27,10 +27,12 @@ export default CardCategory;
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    width: 350,
-    height:100,
-    
-    margin:10,
+    width:340,
+    height:120,
+    marginTop:23,
+    marginRight:23,
+    marginBottom:23,
+    marginLeft:23,
     overflow:"hidden",
     alignItems: "center",
     borderRadius: 30,
