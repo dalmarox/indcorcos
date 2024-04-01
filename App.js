@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <>
-      <StatusBar backgroundColor={colors.header} />
+      <StatusBar backgroundColor={colors.tab} />
       <Provider store={store}>
       
 

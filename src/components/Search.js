@@ -52,7 +52,7 @@ export default Search
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor:colors.header,
+        backgroundColor:colors.tab,
         flexDirection:"row",
         padding:10,
         alignItems:"center"

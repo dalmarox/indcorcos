@@ -62,21 +62,18 @@ export default TabNavigator
 
 const styles = StyleSheet.create({
     tabBar:{
-        backgroundColor:colors.pink,
-        height:80,
+        backgroundColor:colors.tab,
+        height:100,
+        width:"100%",
         position:"absolute",
-        left:20,
-        right:20,
-        bottom:25,
-        borderRadius:15,
-        elevation:4,
+
         /*Shadow IOS*/
-        shadowColor: "#000",
+        shadowColor: "black",
         shadowOffset: {
             width: 0,
-            height: 2,
+            height: 3,
         },
-        shadowOpacity: 0.23,
-        shadowRadius: 2.62, 
+        shadowOpacity: 0.25,
+        shadowRadius: 2.70, 
     }
 })

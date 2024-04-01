@@ -1,7 +1,5 @@
 import { StyleSheet, Text, View,Image,Pressable } from 'react-native'
 import colors from '../utils/globals/colors'
-import Counter from '../components/Counter'
-
 import { useDispatch } from 'react-redux'
 import { addCartItem } from '../features/cart/cartSlice'
 import { useGetProductQuery } from '../app/services/shop'
@@ -14,7 +12,6 @@ const ProductDetail = ({navigation,route}) => {
   const {productId} = route.params
   const {data:product,isLoading,isError,isSuccess} = useGetProductQuery(productId)
 
-  
   if(isLoading) return <LoadingSpinner/>
   if(isError) return <Error message="¡Ups! Algo salió mal." textButton="Volver" onRetry={()=>navigation.goBack()}/>
   if(isSuccess && product === null) return <EmptyListComponent message="El producto no esta disponible"/>
@@ -25,7 +22,7 @@ const ProductDetail = ({navigation,route}) => {
         <Image
           style={styles.image}
           source={{uri:product?.images}}
-          resizeMode='cover' 
+          resizeMode='cover'
         />
         <View style={styles.containerText}>
           <Text style={styles.title}>{product.title}</Text>
@@ -43,6 +40,7 @@ const ProductDetail = ({navigation,route}) => {
 }
 
 export default ProductDetail
+
 
 
 

@@ -7,7 +7,7 @@ import colors from '../utils/globals/colors'
 const TabBarIcon = ({title,nameIcon,focused}) => {
   return (
     <View>
-     <Ionicons name={nameIcon} size={25} color={focused ? colors.blue:colors.green1}/>  
+     <Ionicons name={nameIcon} size={40} color={focused ? colors.primary:colors.black}/>  
       <Text style={[styles.text,!focused && styles.textFocused]} >{title}</Text>
     
     </View>
@@ -18,15 +18,19 @@ export default TabBarIcon
 
 const styles = StyleSheet.create({
     container:{
-        alignItems: 'center'
+        alignItems: 'center',
+      
+        
+        
     },
     text:{
-        color:colors.pink,
+        color:"black",
         textAlign:"center",
-        fontSize:15
+        fontSize:14,
+    
     },
     textFocused:{
-        color: colors.blue
+        color: colors.black
     }
 
 })

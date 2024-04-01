@@ -64,13 +64,14 @@ switch(error.path){
     <>
 <View style={styles.main}>
       
-          <Image
-        style={styles.logo}
-        source={{uri:'https://imgbb.host/images/2Vsvq.th.jpeg'}}
-      />
+       
           <Text style={styles.text}>Industrias Corcos, nuestro ecommerce y centro de consultas</Text>
-
+     <Image
+        style={styles.foto}
+        source={{uri:'https://i.ibb.co/pLvJ26Q/welding7.jpg'}}
+      />
             <View style={styles.container}>
+       
                 
                 <InputForm
                     label="Email"
@@ -135,17 +136,16 @@ const styles = StyleSheet.create({
       fontFamily:fonts.JosefinSansBold,
       color:"blue"
     },
-logo:{
-margin:10,
-padding:10,
-  width:80,
-height:80,
-},
+
 text:{
   fontSize:22,
   fontFamily:fonts.JosefinSansBold,
   textAlign:"center",
-  padding:15
+  paddingBottom:30
 },
-
+foto:{
+  alignItems:"center",
+    width:"100%",
+    height:"20%"
+}
 })

@@ -1,4 +1,4 @@
-import { View , Text ,StyleSheet,Platform ,StatusBar, Pressable } from "react-native"
+import { View , Text ,StyleSheet,Platform ,StatusBar, Pressable,Image } from "react-native"
 import colors from "../utils/globals/colors"
 import {AntDesign} from "@expo/vector-icons"
 import { useDispatch, useSelector } from "react-redux"
@@ -25,10 +25,15 @@ const Header = ({title="Ecommerce",navigation}) => {
       )}
 
       <Text style={styles.text}>{title}</Text>
+      <Image
+        style={styles.logo}
+        source={{uri:'https://imgbb.host/images/2Vsvq.th.jpeg'}}
+      />
       {idToken && (
                     <Pressable style={styles.logoutIcon} onPress={onLogout}>
                      <AntDesign name="logout" size={30} color="black"/>
                     </Pressable>)}
+
     </View>
   );
 };
@@ -37,7 +42,7 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.header,
+    backgroundColor: colors.tab,
     height: 150,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     width: "100%",
@@ -60,4 +65,10 @@ const styles = StyleSheet.create({
     right:10,
     bottom:15
 },
+logo:{
+  margin:10,
+padding:10,
+  width:50,
+height:50,
+}
 });

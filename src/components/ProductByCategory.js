@@ -18,11 +18,11 @@ export default ProductByCategory
 
 const styles = StyleSheet.create({
    container:{
-    
-    width:"90%",
+    flex:1,
+    width:"70%",
     marginHorizontal:"10%",
-    marginVertical:10,
-    padding:10,
+    marginVertical:5,
+    padding:5,
     borderRadius:10,
     flexDirection:"column",
     alignItems: "center",
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 
    },
    text:{
-    width:"60%",
+    width:"100%",
     fontSize: 18,
     color: "black",
     fontFamily: fonts.JosefinSansBold
@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
    },
  image:{
 
-    minWidth: 180,
-    minHeight:180,
+    minWidth: 200,
+    minHeight:200,
     
     borderRadius:5,
 

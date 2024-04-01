@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     },
     confirmContainer:{
         flexDirection:"row",
-        backgroundColor:colors.ligthGray,
+        backgroundColor:colors.aqua,
         padding:25,
         justifyContent:"space-between",
         

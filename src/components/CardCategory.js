@@ -28,10 +28,10 @@ const styles = StyleSheet.create({
   container: {
     flex:1,
     width:340,
-    height:120,
-    marginTop:23,
+    height:80,
+    marginTop:15,
     marginRight:23,
-    marginBottom:23,
+    marginBottom:15,
     marginLeft:23,
     overflow:"hidden",
     alignItems: "center",
