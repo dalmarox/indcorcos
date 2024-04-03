@@ -32,7 +32,7 @@ const Login = ({navigation}) => {
        loginSchema.validateSync({email,password})
         const {data,error} = await  triggerLogin({email,password})
         if(error){
-          console.log(error.data.error.message)
+         // console.log(error.data.error.message)
           setModalVisible(true)
         }
 

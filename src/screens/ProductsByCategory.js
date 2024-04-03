@@ -14,10 +14,7 @@ const ProductsByCategory = ({navigation,route}) => {
   const [productsFiltered,setProductsFiltered] = useState([])
   const [keyword,setKeyword] = useState("")
 
-
-  const handlerKeyword = (k) => {
-    setKeyword(k)
-  }
+  
   useEffect(()=>{
    setProductsFiltered(products)
    if(keyword) setProductsFiltered(products.filter(product => {
@@ -31,7 +28,9 @@ const ProductsByCategory = ({navigation,route}) => {
   if(isError) return <Error message="¡Ups! Algo salió mal." textButton="Volver" onRetry={()=>navigation.goBack()}/>
   if(isSuccess && products.length === 0) return <EmptyListComponent message="No hay productos de esta categoria"/>
   
-  
+  const handlerKeyword = (k) => {
+    setKeyword(k)
+  }
 
   return (
     <>

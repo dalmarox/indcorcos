@@ -1,5 +1,5 @@
 import { StyleSheet, View } from 'react-native'
-import React, { children } from 'react'
+
 
 const ShadowPrimary = ({style,children}) => {
   return (

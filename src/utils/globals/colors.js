@@ -14,6 +14,7 @@ const colors={
     input:"#ADB9E3",
     tab:"#878C8F",
     white:"white",
+    silver:"#C4BBB8"
     
 }
 

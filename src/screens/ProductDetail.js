@@ -21,11 +21,11 @@ const ProductDetail = ({navigation,route}) => {
     <View style={styles.content} >
         <Image
           style={styles.image}
-          source={{uri:product?.images}}
+          source={{uri:product?.images }}
           resizeMode='cover'
         />
         <View style={styles.containerText}>
-          <Text style={styles.title}>{product.title}</Text>
+          <Text style={styles.title}>{product?.title}</Text>
           <Text>{product?.description}</Text>
         </View>
         <View style={styles.containerPrice }>
@@ -57,7 +57,8 @@ const styles = StyleSheet.create({
 
   image:{
     width:"100%",
-    height:300
+    height:200,
+    
   },
   containerText:{
     gap:25,

@@ -1,135 +1,200 @@
 [
   {
-  "id":0,
-  "title": "Transformador 0" ,
-  "price":  1000,
-  "category": "Transformadores",
-  "description": 
-  "Transforador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
-  "stock": 10,
-  "images":
-  "https://www.corcos.com.ar/trafos01.jpg"
-  },
-
-  {
-    "id": 1,
-    "title": "Transformador 1" ,
-    "price":  2000,
-    "category": "Transformadores",
-    "description": 
-    "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
-    "stock": 1,
-    "images": 
-    "https://www.corcos.com.ar/trafos01.jpg"
-    },
-    {
-     "id": 2,
-    "title": "Transformador 2" ,
+    "id": 0,
+    "title": "Transformador 0",
     "price": 1000,
     "category": "Transformadores",
-    "description": 
-    "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
+    "description": "Transforador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
     "stock": 10,
-    "images": 
-    "https://www.corcos.com.ar/trafos01.jpg"
-    },
-    {
-      "id": 3,
-     "title": "MPP 10" ,
-     "price": 1000,
-     "category": "Soldadoras de Punto " ,
-     "description":  "Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
-     "stock": 10,
-     "images": 
-             "https://www.corcos.com.ar/SoldadoraPorPuntos.jpg"
-     },
-     
-     
-       {
-      "id": 4,
-     "title": "MPP 20" ,
-     "price": 2000,
-     "category":  "Soldadoras de Punto ",
-     "description": " Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
-     "stock": 10,
-     "images": 
-             "https://www.corcos.com.ar/SoldadoraPorPuntos-MPP-20.jpg"
-       },
-     
-  
-     {
-      "id": 5,
-      "title": "Modelo C-1. 130 Amp. 220 Vca.:" ,
-      "price": 1000,
-      "category": "Soldadoras de Arco",
-      "description": "12 Puntos de regulación 40-135 Amp CA.",
-      "stock": 2,
-      "images": "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-1.gif"
-      },
-      {
-        "id": 6,
-        "title": "Modelo C-2. 170 Amp. 220 Vca" ,
-        "price": 1000,
-        "category": "Soldadoras de Arco",
-        "description": "24 Puntos de regulación 40-175 Amp CA.",
-        
-        "stock": 10,
-        "images": 
-        "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-2.gif"
-        },
-        {
-          "id": 7,
-          "title": "Modelo C-5. 260 Amp. 220/380 Vca" ,
-          "price": 1000,
-          "category": "Soldadoras de Arco",
-          "description": "36 Puntos de regulación 15-265 Amp CA.",
-          
-          "stock": 10,
-          "images": 
-              "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-3.gif"
-          },
-          {
-            "id": 8,
-            "title": "Modelo C-6. 300 Amp. 220/380 Vca" ,
-            "price": 1000,
-            "category": "Soldadoras de Arco",
-            "description": "36 Puntos de regulación 15-265 Amp CA.",
-           
-            "stock": 10,
-            "images": 
-            "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-5.gif"
-            },
-
-            {
-              "id": 9,
-              "title": "Modelo C-6. 300 Amp. 220/380 Vca" ,
-              "price": 1000,
-              "category": "Soldadoras de Arco",
-              "description": "36 Puntos de regulación 15-265 Amp CA.",
-             
-              "stock": 10,
-              "images": 
-                 "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-6.gif"
-              },
-              {
-                "id": 10,
-                "title": "Modelo C-7. 450 Amp. 220/380 Vca" ,
-                "price": 1000,
-                "category": "Soldadoras de Arco",
-                "description": "36 Puntos de regulación 15-265 Amp CA.",
-               
-                "stock": 10,
-                "images": 
-               "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-7b.jpg"
-                },
-                {
-                "id": 11,
-                "title": "Serie RD" ,
-                "price": 1000,
-                "category": "Soldadoras de corriente continua",
-                "description": "A diodos de silicio sobredimensionados, conectados en circuito trifásico,",
-                "stock": 10,
-                "images":
-                "https://i.ibb.co/4JzfWGC/Equipo-de-Soldadura-por-Arco-Electrico-de-Corriente-Continua.jpg"
-                }
+    "images": "https://www.corcos.com.ar/trafos01.jpg"
+  },
+  {
+    "id": 1,
+    "title": "Transformador 1",
+    "price": 2000,
+    "category": "Transformadores",
+    "description": "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
+    "stock": 1,
+    "images": "https://www.corcos.com.ar/trafos01.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Transformador 2",
+    "price": 1000,
+    "category": "Transformadores",
+    "description": "Transformador de seguridad:Para iluminación ornamental de Parques, Jardines y Espejos de Agua",
+    "stock": 10,
+    "images": "https://www.corcos.com.ar/trafos01.jpg"
+  },
+  {
+    "id": 3,
+    "title": "MPP 10",
+    "price": 1000,
+    "category": "Soldadoras por Puntos ",
+    "description": "Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
+    "stock": 10,
+    "images": "https://imgbb.host/images/QipXE.png"
+  },
+  {
+    "id": 4,
+    "title": "MPP 20",
+    "price": 2000,
+    "category": "Soldadoras por Puntos ",
+    "description": " Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
+    "stock": 10,
+    "images": "https://www.corcos.com.ar/SoldadoraPorPuntos-MPP-20.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Fuente para brazo robótico de soldadura de punto",
+    "price": 2000,
+    "category": "Soldadoras por Puntos ",
+    "description": "Fuente de 25 kva aplicable a soldadura de punto de mallas utilizando brazos robóticos o pórticos CNC",
+    "stock": 1,
+    "images": "https://imgbb.host/images/QngQ2.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "Actuador de soldadura por puntos para brazo robótico",
+    "price": 2000,
+    "category": "Soldadoras por Puntos ",
+    "description": "Electrodo para soldadura por puntos para montar sobre brazo robótico con sensor de presión de soldadura hasta 30 Kv",
+    "stock": 1,
+    "images": "https://imgbb.host/images/QnDXt.jpeg"
+  },
+  {
+    "id": 7,
+    "title": "Modelo C-1. 130 Amp. 220 Vca.:",
+    "price": 1000,
+    "category": "Soldadoras de Arco",
+    "description": "12 Puntos de regulación 40-135 Amp CA.",
+    "stock": 2,
+    "images": "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-1.gif"
+  },
+  {
+    "id": 8,
+    "title": "Modelo C-2. 170 Amp. 220 Vca",
+    "price": 1000,
+    "category": "Soldadoras de Arco",
+    "description": "24 Puntos de regulación 40-175 Amp CA.",
+    "stock": 10,
+    "images": "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-2.gif"
+  },
+  {
+    "id": 9,
+    "title": "Modelo C-5. 260 Amp. 220/380 Vca",
+    "price": 1000,
+    "category": "Soldadoras de Arco",
+    "description": "36 Puntos de regulación 15-265 Amp CA.",
+    "stock": 10,
+    "images": "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-3.gif"
+  },
+  {
+    "id": 10,
+    "title": "Modelo C-6. 300 Amp. 220/380 Vca",
+    "price": 1000,
+    "category": "Soldadoras de Arco",
+    "description": "36 Puntos de regulación 15-265 Amp CA.",
+    "stock": 10,
+    "images": "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-5.gif"
+  },
+  {
+    "id": 11,
+    "title": "Modelo C-6. 300 Amp. 220/380 Vca",
+    "price": 1000,
+    "category": "Soldadoras de Arco",
+    "description": "36 Puntos de regulación 15-265 Amp CA.",
+    "stock": 10,
+    "images": "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-6.gif"
+  },
+  {
+    "id": 12,
+    "title": "Modelo C-7. 450 Amp. 220/380 Vca",
+    "price": 1000,
+    "category": "Soldadoras de Arco",
+    "description": "36 Puntos de regulación 15-265 Amp CA.",
+    "stock": 10,
+    "images": "https://www.corcos.com.ar/Equipo%20Soldador%20por%20Arco%20Modelo%20C-7b.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Serie RD",
+    "price": 1000,
+    "category": "Equipo de soldadura por Corriente Contínua",
+    "description": "La línea de equipos de soldadura por arco eléctrico de corriente continua marca CORCOS®, Serie RD",
+    "stock": 10,
+    "images": "https://www.corcos.com.ar/Equipo-de-Soldadura-por-Arco-Electrico-de-Corriente-Continua.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Fuentes de corriente contínua para galvanoplastía y tratamientos térmicos",
+    "price": 1000,
+    "category": "Fuentes de Corriente Contínua",
+    "description": "Diseñamos y fabricamos rectificadores para uso industrial, controlados en corriente y tensión según sus necesidades. En potencias desde 5kW hasta 200kW.",
+    "stock": "A pedido",
+    "images": "https://imgbb.host/images/QVVYG.png"
+  },
+  {
+    "id": 15,
+    "title": "Rectificador",
+    "price": 5000,
+    "category": "Ingeniería de servicios",
+    "description": "A diodos de silicio sobredimensionados, conectados en circuito trifásico,",
+    "stock": "A pedido",
+    "images": "https://i.ibb.co/d2K7fk0/METROVIAAS-FUENTE.png"
+  },
+  {
+    "id": 16,
+    "title": "Cargador y arrancador compacto CA-400",
+    "price": 1000,
+    "category": "Cargadores de batería",
+    "description": "Un compacto, fuerte y seguro arrancador para todo tipo de motores en toda condición climática",
+    "stock": "A pedido",
+    "images": "https://imgbb.host/images/QVoTB.jpeg"
+  },
+  {
+    "id": 17,
+    "title": "MPP 10",
+    "price": 1000,
+    "category": "Soldadoras por puntos",
+    "description": "Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
+    "stock": 10,
+    "images": "https://i.ibb.co/tx3t0mQ/Soldadora-Por-Puntos.png"
+  },
+  {
+    "id": 18,
+    "title": "MPP 20",
+    "price": 2000,
+    "category": "Soldadoras por puntos",
+    "description": " Una línea de equipos de soldadura por resistencia de pie compacta y robusta que cubre las necesidades de los talleres metalúrgicos",
+    "stock": 10,
+    "images": "https://www.corcos.com.ar/SoldadoraPorPuntos-MPP-20.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Fuente para brazo robótico de soldadura de punto",
+    "price": 2000,
+    "category": "Soldadoras por puntos",
+    "description": "Fuente de 25 kva aplicable a soldadura de punto de mallas utilizando brazos robóticos o pórticos CNC",
+    "stock": 1,
+    "images": "https://imgbb.host/images/QngQ2.jpeg"
+  },
+  {
+    "id": 20,
+    "title": "Actuador de soldadura por puntos para brazo robótico",
+    "price": 2000,
+    "category": "Soldadoras por puntos",
+    "description": "Electrodo para soldadura por puntos para montar sobre brazo robótico con sensor de presión de soldadura hasta 30 Kv",
+    "stock": 1,
+    "images": "https://imgbb.host/images/QnDXt.jpeg"
+  },
+  {
+    "id": 21,
+    "title": "Serie RD 1 250 Amp",
+    "price": 1000,
+    "category": "Equipo de soldadura por Corriente Contínua",
+    "description": "La línea de equipos de soldadura por arco eléctrico de corriente continua marca CORCOS®, Serie RD",
+    "stock": 10,
+    "images": "https://www.corcos.com.ar/Equipo-de-Soldadura-por-Arco-Electrico-de-Corriente-Continua.jpg"
+  }
 ]

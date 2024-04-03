@@ -22,15 +22,14 @@ const Categories = ({navigation}) => {
 
 
   return (
-    <View>
-
+  
     <FlatList
            data={categories} 
            keyExtractor={item => item.title}
            renderItem= {({item}) => <CardCategory item= {item} navigation={navigation}/>}
       
            />
-    </View>
+    
   )
 }
 

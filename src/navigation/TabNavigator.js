@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         backgroundColor:colors.tab,
         height:100,
         width:"100%",
-        position:"absolute",
+        
 
         /*Shadow IOS*/
         shadowColor: "black",

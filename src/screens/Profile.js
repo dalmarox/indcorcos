@@ -7,6 +7,7 @@ const Profile = ({navigation}) => {
     const localId = useSelector((state)=> state.auth.localId)
     const {data} = useGetImageQuery(localId)
   return (
+
     <View style={styles.container}>
         <Image
             source={data ? {uri:data.image}:require("../../assets/user.png")}
@@ -15,10 +16,15 @@ const Profile = ({navigation}) => {
         />
         <AddButton title={"Agregar Imagen de perfil"} onPress={()=> navigation.navigate("ImageSelector")}/>
     </View>
-  )
+    
+
+  );
+
+    
+  
 }
 
-export default Profile
+export default Profile;
 
 const styles = StyleSheet.create({
     container:{
@@ -30,4 +36,5 @@ const styles = StyleSheet.create({
         width:200,
         height:200
     }
+
 })
