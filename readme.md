@@ -92,7 +92,8 @@ const TabNavigator = () => {
 
    <img src="./screenshot/Screenshot_1712443268.png" width="300"> 
    <img src="./screenshot/Screenshot_1712443018.png" width="300"> 
-   <img src="./screenshot/Screenshot_1712443026.png" width="300"> 
+   <img src="./screenshot/Screenshot_1712443026.png" width="300">
+    <img src="./screenshot/Screenshot_1712500072.png" width="300">
 
 ### Tecnologías 
 

@@ -1,13 +1,18 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, TextInput, View, Image } from "react-native";
 import AddButton from "../components/AddButton";
 import { useSelector } from "react-redux";
 import { useGetImageQuery } from "../app/services/profile";
 
 
-const Profile = ({ navigation }) => {
+
+const Profile = (
+  { navigation }
+  
+) => {
   const localId = useSelector((state) => state.auth.localId);
   const { data } = useGetImageQuery(localId);
   return (
+    
     <View style={styles.container}>
       <Image
         source={data ? { uri: data.image } : require("../../assets/user.png")}
@@ -18,11 +23,8 @@ const Profile = ({ navigation }) => {
         title={"Agregar Imagen de perfil"}
         onPress={() => navigation.navigate("ImageSelector")}
       />
-      <AddButton
-        title={"Consultas"}
-        onPress={() => navigation.navigate("TextInput")}
-      />
     </View>
+    
   );
 };
 
@@ -38,5 +40,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 200,
   },
+  whatsapp:{
 
+  }
 });
