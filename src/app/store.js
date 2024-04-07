@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from'../features/counter/counterSlice'
+
 import cartReducer from '../features/cart/cartSlice'
 import { setupListeners } from '@reduxjs/toolkit/query'
 import { shopApi } from './services/shop'
@@ -14,6 +14,7 @@ export const store = configureStore({
           
           cart:cartReducer,
           auth:authReducer,
+          
           [shopApi.reducerPath]: shopApi.reducer,
           [authApi.reducerPath]:authApi.reducer,
           [profileApi.reducerPath]:profileApi.reducer,

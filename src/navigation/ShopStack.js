@@ -5,6 +5,7 @@ import Home from '../screens/Home'
 import ProductDetail from '../screens/ProductDetail'
 import ProductsByCategory from '../screens/ProductsByCategory'
 
+
 const Stack = createNativeStackNavigator();
 const ShopStack = () => {
   return (
@@ -22,6 +23,7 @@ const ShopStack = () => {
                   : route.name === "ProductsByCategory"
                   ? route.params.categorySelected
                   : "Detalle del Producto"
+                
               }
             />
           );

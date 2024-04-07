@@ -6,6 +6,8 @@ import colors from '../utils/globals/colors'
 import { usePostOrderMutation } from '../app/services/orders'
 import { deleteCart} from '../features/cart/cartSlice'
 
+
+
 const Cart = ({navigation}) => {
     const dispatch= useDispatch()
     const cart = useSelector((state)=> state.cart)
@@ -23,17 +25,21 @@ const Cart = ({navigation}) => {
   return (
     <View style={styles.container}>
         
+        
         <FlatList
         data={cart.items}
         keyExtractor={(item)=>item.id}
         renderItem={({item})=> <CartItem item={item}/>}
+    
         />
+         
         <View style={styles.confirmContainer}>
             <Pressable onPress={handlerAddOrder}>
                 <Text style={styles.confirmText}>Confirmar</Text>
             </Pressable>
             <Text style={styles.confirmText}>Total: $ {cart.total}</Text>
         </View>
+        
     </View>
   )
 }

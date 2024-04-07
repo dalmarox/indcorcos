@@ -7,6 +7,7 @@ import LoadingSpinner from '../components/LoadingSpinner'
 import Error from '../components/Error'
 import EmptyListComponent from '../components/EmptyListComponent'
 
+
 const ProductDetail = ({navigation,route}) => {
   const dispatch = useDispatch()
   const {productId} = route.params
@@ -21,7 +22,7 @@ const ProductDetail = ({navigation,route}) => {
     <View style={styles.content} >
         <Image
           style={styles.image}
-          source={{uri:product?.images }}
+          source={{uri:product?.images}}
           resizeMode='cover'
         />
         <View style={styles.containerText}>
@@ -33,7 +34,9 @@ const ProductDetail = ({navigation,route}) => {
           <Pressable style={styles.buyNow} onPress={()=>dispatch(addCartItem(product))}>
             <Text style={styles.buyNowText}>Carrito</Text>
           </Pressable>
+          
         </View>
+      
       </View>
     </View>
   )

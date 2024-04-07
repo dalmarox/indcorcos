@@ -11,9 +11,12 @@ const CartItem = ({item}) => {
     const dispatch = useDispatch()
   return (
         <View style={styles.card}>
+
+          
             <View style={styles.textContainer}>
                 <Text style={styles.text}>{item.title}</Text>
                 <Text style={styles.text2}>{item.brand}</Text>
+              
                 <Text style={styles.text2}>Cantidad: {item.quantity}</Text>
                 <Text style={styles.text2}>Precio: ${item.price} </Text>
                 
